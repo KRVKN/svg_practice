@@ -1,0 +1,68 @@
+body {
+  background: #0E1321;
+}
+
+h3 {
+  font-family: 'Roboto 700', sans-serif;
+  margin-top: 100px;
+  letter-spacing: 1.5vw;
+  font-size: 3vw;
+}
+
+.animate-text {
+  border-left: none;
+  padding-left: 0;
+  color: #FBFCFB !important;
+  font-weight: bold;
+}
+
+.animate-text svg {
+  display: block;
+  letter-spacing: 1.5vw;
+  font-size: 3vw;
+}
+
+.animate-text .text-copy {
+  fill: none;
+  stroke: #0E1321;
+  stroke-dasharray: 6% 29%;
+  -webkit-animation: stroke-offset 5.5s infinite linear;
+          animation: stroke-offset 5.5s infinite linear;
+}
+
+.animate-text .text-copy:nth-child(1) {
+  stroke: #27AFB4;
+  -webkit-animation-delay: -1;
+          animation-delay: -1;
+}
+
+.animate-text .text-copy:nth-child(2) {
+  stroke: #27AFB4;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.animate-text .text-copy:nth-child(3) {
+  stroke: #27AFB4;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.animate-text .text-copy:nth-child(4) {
+  stroke: #27AFB4;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+@-webkit-keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: 35%;
+  }
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: 35%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

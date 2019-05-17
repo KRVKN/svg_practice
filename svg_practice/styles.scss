@@ -1,0 +1,72 @@
+// ----- Variables
+
+$darkblue: #0E1321;
+$oceanblue: #27AFB4;
+$magenta: #CC3366;
+$white: #FBFCFB;
+$gray: #E6E9EB;
+$darkgray: #B3B5B7;
+
+// ----- Mixins
+@mixin h-display ($family, $margin, $size) {
+    // font-family: 'Roboto 700', sans-serif;
+    font-family: $family;
+    // margin-top: 100px;
+    margin-top: $margin;
+    letter-spacing: 1.5vw;
+    // font-size: 3vw;
+    font-size: $size;
+}
+
+// ----- SASS
+
+body {
+    background: $darkblue;
+}
+
+h3 {
+        font-family: 'Roboto 700', sans-serif;
+        margin-top: 100px;
+        letter-spacing: 1.5vw;
+        font-size: 3vw;
+}
+
+.animate-text {
+    border-left: none;
+    padding-left: 0;
+    color: $white !important;
+    font-weight: bold;
+    svg {
+        display: block;
+        letter-spacing: 1.5vw;
+        font-size: 3vw;
+    }
+    .text-copy{
+        fill: none;
+        stroke: $darkblue;
+        stroke-dasharray: 6% 29%;
+        animation: stroke-offset 5.5s infinite linear;
+    }
+    .text-copy:nth-child(1) {
+        stroke: $oceanblue;
+        animation-delay: -1;
+    }
+    .text-copy:nth-child(2) {
+        stroke: $oceanblue;
+        animation-delay: -2s;
+    }
+    .text-copy:nth-child(3) {
+        stroke: $oceanblue;
+        animation-delay: -3s;
+    }
+    .text-copy:nth-child(4) {
+        stroke: $oceanblue;
+        animation-delay: -4s;
+    }
+    @keyframes stroke-offset {
+        100%
+        {
+            stroke-dashoffset: 35%;
+        }
+    }
+}
